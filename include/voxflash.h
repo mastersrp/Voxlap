@@ -1,4 +1,6 @@
-	//Color arithemtic functions (used by voxlap itself and voxed)
+//Color arithemtic functions (used by voxlap itself and voxed)
+#ifndef VOXFLASH_H
+#define VOXFLASH_H
 
 #include "voxlap5.h"
 
@@ -45,3 +47,5 @@ static inline void mmxcolorsub (long *a)
 }
 
 #endif
+
+#endif /* VOXFLASH_H */

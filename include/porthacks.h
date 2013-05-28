@@ -1,7 +1,8 @@
 /**************************************************************************************************
  * porthacks.h: Macros-out differences between GCC & VS, and GNUC & MSVC                          *
  **************************************************************************************************/
-
+#ifndef PORTHACKS_H
+#define PORTHACKS_H // not all platforms support pragma once
 #pragma once
 
 /**
@@ -127,3 +128,5 @@ typedef unsigned __int64 uint64_t;
 #define BOUND(value, min, max) ((value)>(max)?(max):((value)<(min)?(min):(value)))
 
 #define ANTIBOUND(value, min, max) ((value)>((max)+(min)/2)?((value)>(max)?(value):(max)):((value)<(min)?(value):(min)))
+
+#endif /* PORTHACKS_H */

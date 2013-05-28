@@ -1,6 +1,9 @@
 // VOXLAP engine by Ken Silverman (http://advsys.net/ken)
 // This file has been modified from Ken Silverman's original release
 
+#ifndef VOXLAP5_H
+#define VOXLAP5_H
+
 #pragma once
 
 // For SSE2 byte-vectors
@@ -347,3 +350,5 @@ extern void voxredraw ();
 #if defined(VOXLAP_C) && defined(__cplusplus)
 }
 #endif
+
+#endif /* VOXLAP5_H */

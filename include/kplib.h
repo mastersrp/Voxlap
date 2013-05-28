@@ -2,6 +2,9 @@
  * kplib.h: Ken's Picture Library: supports various image formats and zip archives                *
  **************************************************************************************************/
 
+#ifndef KPLIB_H
+#define KPLIB_H
+
 #pragma once
 
 #if defined(KPLIB_C) && defined(__cplusplus)
@@ -35,3 +38,5 @@ extern int kzfindfile (char *); //you alloc buf, returns 1:found,0:~found
 #if defined(KPLIB_C) && defined(__cplusplus)
 	}
 #endif
+
+#endif /* KPLIB_C */

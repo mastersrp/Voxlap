@@ -2,6 +2,8 @@
  * ksnippits.h: Bit's of inline assembly Ken commonly used because the C compiler sucked          *
  **************************************************************************************************/
 
+#ifndef KSNIPPETS_H
+#define KSNIPPETS_H
 #pragma once
 
 	//Ericson2314's dirty porting tricks
@@ -133,3 +135,5 @@ static inline unsigned long bswap (unsigned long a)
 	return _byteswap_ulong(a);
 	#endif
 }
+
+#endif /* KSNIPPETS_H */
